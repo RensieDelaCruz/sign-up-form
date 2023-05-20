@@ -380,3 +380,43 @@ template {
 
 /* NORMALIZE END */
 /* PAGE STYLE */
+
+/* *{
+    border: 2px solid red;
+} */
+
+/* Custom font */
+@font-face {
+    font-family: titleFont;
+    src: url(font/veganstylepersonaluse-5y58-webfont.woff);
+}
+
+body{
+    display: flex;
+}
+
+.title-section {
+    background: no-repeat url(images/honda-cafe-racer.jpg);
+    background-color: gray;
+    background-size: cover;
+
+    width: 40%;
+    height: 100%;
+}
+
+.title-container{
+    background-color: rgba(255, 255, 255, 0.74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16rem;
+}
+
+.title-container img{
+    width: 200px;
+}
+
+.title{
+    font-family: titleFont;
+    font-size: 3rem;
+}

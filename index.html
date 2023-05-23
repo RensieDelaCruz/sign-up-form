@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,15 +7,54 @@
     <link rel="stylesheet" href="styles.css">
     <title>Sign-up Form</title>
 </head>
+
 <body>
     <div class="title-section">
         <div class="title-container">
             <img src="images/cafe-racer-logo.png" alt="A cafe racer motorcycle">
             <div class="title">Cafe Racer Motor Club</div>
         </div>
+        <div class="credit">Photo by <a href="https://unsplash.com/@leonseierlein">Leon Seierlein</a> from <a href="https://unsplash.com/">unsplash</a></div>
     </div>
     <div class="form-section">
-        <h1>form</h1>
+        <div class="disclaimer">This is not a real online service! You know you need something like this in your life to
+            help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.<br><br>You <em>know</em> you
+            want to.
+        </div>
+        <form action="" method="post">
+            <h2>Let's Ride!</h2>
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="first-name">FIRST NAME*</label>
+                    <input id="first-name" name="first-name" type="text" placeholder="ex. John" required>
+                </div>
+                <div class="form-item">
+                    <label for="last-name">LAST NAME*</label>
+                    <input id="last-name" name="last-name" type="text" placeholder="ex. Doe" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="mail">EMAIL*</label>
+                    <input id="mail" name="mail" type="email" placeholder="ex. john.doe@gmail.com" required>
+                </div>
+                <div class="form-item">
+                    <label for="mobile">MOBILE NUMBER</label>
+                    <input id="mobile" name="mobile" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="ex. 431-000-0000">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-item">
+                    <label for="password">PASSWORD*</label>
+                    <input id="password" name="password" type="password" minlength="7" maxlength="20" required>
+                </div>
+                <div class="form-item">
+                    <label for="confirm-password">CONFIRM PASSWORD*</label>
+                    <input id="confirm-password" name="confirm-password" type="password" minlength="7" maxlength="20" required>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
+
 </html>
